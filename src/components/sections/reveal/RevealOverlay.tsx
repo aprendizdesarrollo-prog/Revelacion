@@ -78,7 +78,7 @@ export function RevealOverlay({ result, rehearsal, prediction, onClose }: Props)
               animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
               exit={{ opacity: 0, scale: 0.6 }}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="font-display text-[clamp(7rem,30vw,16rem)] leading-none text-cream italic"
+              className="font-display text-[clamp(5rem,min(30vw,45svh),16rem)] leading-none text-cream italic"
             >
               {count}
             </motion.p>
@@ -95,7 +95,7 @@ export function RevealOverlay({ result, rehearsal, prediction, onClose }: Props)
               <p className="eyebrow text-ink/70">Nuestro bebé es…</p>
               <h2
                 id="reveal-result"
-                className="mt-4 font-display text-[clamp(4rem,17vw,11rem)] leading-[0.95] font-medium text-ink"
+                className="mt-4 font-display text-[clamp(3rem,min(17vw,22svh),11rem)] leading-[0.95] font-medium text-ink"
               >
                 {copy.reveal}
               </h2>

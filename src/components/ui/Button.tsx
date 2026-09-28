@@ -12,7 +12,7 @@ const styles: Record<Variant, string> = {
 }
 
 const base =
-  'group relative inline-flex min-h-12 items-center justify-center gap-2 overflow-hidden rounded-full px-7 py-3 text-[0.95rem] font-medium tracking-wide transition-colors duration-300 disabled:opacity-60'
+  'group relative inline-flex min-h-12 items-center justify-center gap-2 overflow-hidden rounded-full px-5 py-3 text-[0.9rem] font-medium sm:px-7 sm:text-[0.95rem] tracking-wide transition-colors duration-300 disabled:opacity-60'
 
 interface CommonProps {
   variant?: Variant

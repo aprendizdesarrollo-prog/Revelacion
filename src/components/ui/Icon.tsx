@@ -92,7 +92,7 @@ export function Icon({ name, className = 'h-5 w-5', filled = false, title }: Pro
   return (
     <svg
       viewBox="0 0 24 24"
-      className={`inline-block shrink-0 ${className}`}
+      className={`shrink-0 ${className}`}
       fill={filled ? 'currentColor' : 'none'}
       stroke="currentColor"
       strokeWidth={1.6}

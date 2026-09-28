@@ -35,8 +35,9 @@ export function Location() {
           className="card-surface px-6 py-12 text-center sm:px-12"
         >
           <p className="eyebrow flex items-center justify-center gap-2 text-cocoa"><Icon name="pin" className="h-4 w-4 text-terracotta" /> Dirección</p>
-          <address className="mt-4 font-display text-4xl leading-tight font-medium not-italic text-espresso sm:text-5xl">
-            {EVENT.address}
+          <address className="mt-4 font-display text-[clamp(2rem,8vw,3rem)] leading-tight font-medium text-balance not-italic text-espresso">
+            {/* Guion que no se parte, para no separar "A-113" */}
+            {EVENT.address.replace(/-/g, '\u2011')}
           </address>
           <p className="mt-4 text-cocoa">
             {EVENT.dateLong} · {EVENT.timeLabel}

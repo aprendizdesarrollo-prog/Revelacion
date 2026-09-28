@@ -41,7 +41,7 @@ export function RsvpConfirmation({ answer, focusOnMount, onEdit }: Props) {
         ref={headingRef}
         tabIndex={-1}
         variants={fadeUp}
-        className="mt-6 font-display text-[2.6rem] leading-tight font-medium text-balance focus:outline-none sm:text-6xl"
+        className="mt-6 font-display text-[clamp(2.1rem,10vw,3.75rem)] leading-tight font-medium text-balance focus:outline-none"
       >
         {answer.asistencia ? '¡Te esperamos!' : '¡Gracias por avisarnos!'}
       </motion.h3>
@@ -53,7 +53,7 @@ export function RsvpConfirmation({ answer, focusOnMount, onEdit }: Props) {
       <motion.div variants={fadeUp} className="mt-6">
         <Button href={whatsappUrl(answer)} target="_blank" rel="noopener noreferrer" className="w-full">
           <Icon name="send" className="h-5 w-5" />
-          Abrir WhatsApp de nuevo
+          Abrir WhatsApp otra vez
         </Button>
       </motion.div>
 

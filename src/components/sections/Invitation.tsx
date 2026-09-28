@@ -11,7 +11,7 @@ import { SectionHeading } from '../ui/SectionHeading'
 const details = [
   { label: 'Fecha', value: EVENT.dateLong },
   { label: 'Hora', value: EVENT.timeLabel },
-  { label: 'Lugar', value: EVENT.address },
+  { label: 'Lugar', value: EVENT.address.replace(/-/g, '\u2011') },
   { label: 'Vestimenta', value: EVENT.dressCode },
 ]
 

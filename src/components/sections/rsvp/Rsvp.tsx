@@ -43,7 +43,7 @@ export function Rsvp({ prediction, onPredictionChange }: Props) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.9, ease: EASE_OUT }}
-        className="card-surface mx-auto max-w-xl p-6 sm:p-10"
+        className="card-surface mx-auto max-w-xl px-5 py-7 sm:p-10"
       >
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
